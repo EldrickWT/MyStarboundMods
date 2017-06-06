@@ -1,0 +1,97 @@
+{
+  "itemName" : "glamazonbow", //heavily editted from Horizon Zero Dawn Mod (882472624) with assets from "cupidsbow" until I can find better.
+  "price" : 1500,
+  "inventoryIcon" : "glamazonbowicon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "A traditional Glamazon Bow for hunting... glamourously.",
+  "shortdescription" : "Glamazon Bow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+  "level" : 6,
+  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animationParts" :
+    {
+      "bow" : "glamazonbowfull.png"
+    },
+  "animationCustom" :
+    {
+      "animatedParts" :
+        {
+          "parts" :
+            {
+              "bow" :
+                {
+                  "properties" :
+                    {
+//                      "offset" : [0, -0.0625] //horizon bows
+                      "offset" : [0, 0] //cupidsbow
+                    }
+                }
+            }
+        },
+      "sounds" :
+        {
+            //From Horizon Zero Dawn Mod (882472624)
+          "draw" : [ "/sfx/gun/glamdraw3.ogg", "/sfx/gun/glamdraw3.ogg", "/sfx/gun/glamdraw3.ogg" ],
+          "release" : [ "/sfx/gun/shotglam1.ogg" ],
+          "perfectRelease" : [ "/sfx/gun/glamrelease.ogg" ]
+        }
+    },
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" :
+    {
+      "drawSpeedMultiplier" : "constant",
+      "projectileType" : "chargedglamarrow",
+      "powerProjectileType" : "chargedglamarrow",
+      "projectileParameters" :
+        {
+          "power" : 55,
+          "speed" : 100,
+          "actionOnReap" :
+            [
+              {
+                "action" : "config",
+                "file" : "/projectiles/explosions/arrowexplosion/arrowexplosion.config"
+              }
+            ]
+        }
+    },
+  "altAbilityType" : "bowshot",
+  "altAbility" :
+    {
+    "name" : "Glamourous Arrow",
+//    "energyPerShot" : 55,
+    "drawSpeedMultiplier" : "constant",
+    "projectileType" : "chargedglamarrowf",
+    "powerProjectileType" : "chargedglamarrowf",
+    "projectileParameters" :
+      {
+        "power" : 55,
+        "speed" : 100,
+        "tileDamage" : 2,
+        "harvestLevel" : 99,
+        "tileDamageBlunted" : 0.2,
+        "actionOnReap" :
+          [
+            {
+              "action" : "config",
+              "file" : "/projectiles/explosions/regularexplosion2/fireexplosionknockback.config"
+            },
+            {
+              "action" : "explosion",
+              "foregroundRadius" : 1,
+              "backgroundRadius" : 1,
+              "explosiveDamageAmount" : 100.0,
+              "harvestLevel" : 99,
+              "delaySteps" : 0
+            }
+          ]
+      }
+    },
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

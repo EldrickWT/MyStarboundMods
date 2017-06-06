@@ -1,0 +1,12 @@
+{
+  "version" : "1.0.0",
+  "steamContentId" : "",
+  "link" : "",
+  "friendlyName" : "Glamazon Bow",
+  "requires" : [],
+  "description" : "A shamefully appropriated bow tarted up with PaintShop tweaked, vanilla assets, but with the hard working inner configuration from Horizon Zero Dawn Mod (thank you for your work MIChammeron) (882472624). In direct terms: Arrow looks, vanilla cupidarrow; arrow config, horizonbow horizonbow2; bow looks, cupidsbow; bow config, horizonbow2 mostly; sounds horizonbow2 /because they stomp vanilla/; explosions adjusted to fireplasma with knockback based on parts and descriptors, and a desire to not need to switch to a grenade launcher. And there you have this stodge I've made.",
+  "name" : "Glamazon Bow",
+  "author" : "EldrickTobin",
+  "includes" : [],
+  "priority" : 100
+}

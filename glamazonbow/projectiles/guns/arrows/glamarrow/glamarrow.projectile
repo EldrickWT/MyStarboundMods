@@ -1,0 +1,20 @@
+{
+  "projectileName" : "glamarrow",
+  "physics" : "arrow",
+  "image" : "glamarrow.png",
+  "animationCycle" : 0.25,
+  "pointLight" : false,
+  "lightColor" : [233, 34, 137], //Vivid cerise #E92289 From Heart Seeker Ashe banner.
+  "frameNumber" : 1,
+  "emitters" : [],
+  "damageKind" : "bow",
+  "power" : 50,
+  "knockback" : 20,
+  "knockbackDirectional" : true,
+  "piercing" : true,
+  "damageKindImage" : "icon.png",
+  "timeToLive" : 20,
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "statusEffects" : [],
+  "actionOnReap" : []
+}
